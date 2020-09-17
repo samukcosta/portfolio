@@ -5,6 +5,8 @@ const plusInfo = document.querySelector(".plusInfo")
 const helloWorld = "Hello, World!"
 const element = document.querySelector('.word')
 
+const person = '"Se quiser conhecer uma pessoa, não ouça nada do que ela diz. Apenas observe seus atos." - Kléber Novartes'
+
 function typeWrite(helloWorld) {
     element.innerHTML = ''
     const textArray = helloWorld.split('');
@@ -18,6 +20,7 @@ if (element) typeWrite(helloWorld)
 document.querySelector("#about").addEventListener("click", function(){
     showInfo.innerHTML = "<i class='fas fa-minus info'></i>Informações"
     plusInfo.classList.remove("active")
+    typeWrite(person)
 })
 
 if (showInfo){
@@ -25,7 +28,6 @@ if (showInfo){
         if (showInfo.textContent === " Informações"){
             showInfo.innerHTML = "<i class='fas fa-minus info'></i>Informações"
             plusInfo.classList.remove("active")
-            const person = '"Se quiser conhecer uma pessoa, não ouça nada do que ela diz. Apenas observe seus atos." - Kléber Novartes'
             typeWrite(person)
         } else {
             showInfo.innerHTML = "<i class='fas fa-plus info'></i> Informações"
