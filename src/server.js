@@ -16,6 +16,6 @@ nunjunks.configure("src/app/views", {
 
 let port = process.env.PORT || 8000
 
-server.listen(5000, function(){
+server.listen(port, function(){
     console.log("server is running")
 })
