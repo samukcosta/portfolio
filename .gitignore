@@ -1,0 +1,26 @@
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+public/_img/files/*
+package.json
+package-lock.json
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+backupFoodfy.sql
+.env
+.env.test
+
+# Temporary folders
+tmp/
+temp/

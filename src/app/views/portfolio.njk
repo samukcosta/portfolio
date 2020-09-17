@@ -1,0 +1,54 @@
+{% extends "layout.njk"%}
+
+{%block head%}
+
+<title>Portfolio - Samuel Costa</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{%endblock head%}
+
+{%block content%}
+
+    <div id="wrapper">
+        <h1>Projetos</h1>
+    </div>
+
+    <section class="cards">
+        {%for project in projects %}
+            <div class="card" id="{{project.id}}">
+                <input type="hidden" name="srcVideo" id="srcVideo" value="{{project.srcVideo}}">
+                <div class="card_image-container">
+                    <img src={{project.image}} alt="Imagem de {{project.title}}">
+                </div>
+                <div class="card_content">
+                    <h3>{{project.title}}</h3>
+                    <p>{{project.description}}</p>
+                </div>
+                <div class="card_info">
+                    <p class="card_button">
+                        <a
+                            href="{{project.repository}}"
+                            target="_blank"
+                        ><i class="fab fa-github"></i>Repositório no Github</a
+                        >
+                    </p>
+                    <p class="card_button">
+                        <a><i class="fas fa-plus"></i>Mais sobre o projeto</a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+{%endblock content%}
+
+{%block modal%}
+<div class="modal_overlay">
+    <div class="modal">
+        <iframe id="video" src="" width="640" height="1139" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="close_modal">
+        <a class="close"><i class="fas fa-times"></i></a>
+    </div>
+</div>
+{%endblock modal%}
