@@ -66,6 +66,22 @@
     #wrapper .plusInfo div .text.area {
         height: 90vh;
     }
+
+    .cards {
+        max-width: 50%;
+        margin: 0 90px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+
+    .card_info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 8px;
+        bottom: relative;
+    }
 }
 
 @media (max-width:360px) {
