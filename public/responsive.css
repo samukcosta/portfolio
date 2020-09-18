@@ -61,6 +61,13 @@
     }
 }
 
+@media (max-width:500px) {
+    #wrapper .plusInfo div .text,
+    #wrapper .plusInfo div .text.area {
+        height: 90vh;
+    }
+}
+
 @media (max-width:360px) {
     #wrapper .plusInfo div .text,
     #wrapper .plusInfo div .text.area {
