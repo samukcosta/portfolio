@@ -57,6 +57,9 @@
     padding: 0;
     margin: 0;
 }
+html {
+    width: 100%;
+}
 body {
     background: var(--color-black);
     font-family: 'Source Sans Pro', sans-serif;
@@ -201,6 +204,7 @@ margin-right: 5px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
     animation-name: transition;
     animation-duration: 900ms;
@@ -221,12 +225,16 @@ margin-right: 5px;
 }
 
 #wrapper .plusInfo div .text {
-    height: 55vh;
-    width: 90vh;
+    height: 470px;
+    width: 850px;
     display: block;
     border: 1px solid #0b862a;
     text-align: start;
     position: relative;
+}
+
+#wrapper .plusInfo div .text.area {
+    height: 560px;
 }
 
 #wrapper .plusInfo div .text i {
@@ -239,8 +247,8 @@ margin-right: 5px;
 }
 
 #wrapper .plusInfo div .list {
-    height: 49%;
-    width: 90vh;
+    height: 100px;
+    width: 850px;
     display: block;
     border: 1px solid #0b862a;
 }
