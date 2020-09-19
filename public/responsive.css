@@ -67,6 +67,10 @@
         height: 90vh;
     }
 
+    #wrapper .plusInfo div .text.courses {
+        height: 480px;
+    }
+
     .cards {
         max-width: 50%;
         margin: 0 90px 0;
