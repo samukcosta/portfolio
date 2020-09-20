@@ -86,8 +86,13 @@
 }
 
 @media (max-width:360px) {
+    body {
+        min-width: 320px;
+    }
     #wrapper .plusInfo div .text,
-    #wrapper .plusInfo div .text.area {
+    #wrapper .plusInfo div .text.area,
+    #wrapper .plusInfo div .list {
+        min-width: 90%;
     }
 
     #wrapper img {
